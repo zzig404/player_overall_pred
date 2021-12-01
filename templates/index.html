@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting_App</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1>Made by <strong>Lynn Zigara R207669D HDSC</strong></h1>
+            <h2>Player Overall Score Rating </h2>
+            <h3>movement_reactions</h3>
+            <input id="first" name="mentality_composure" type="number ">
+            <h3>movement_reactions</h3><br><input id="second" name="movement_reactions" required="required">
+            <h3>mentality_composure</h3><br><input id="second" name="mentality_composure" required="required">
+            <h3>attacking_short_passing</h3><input id="third" name="attacking_short_passing" required="required">
+            <h3>skill_ball_control</h3><br><input id="fourth" name="skill_ball_control" required="required">
+            <h3>passing</h3><br><input id="fourth" name="passing" required="required">
+            <h3>potential</h3><br><input id="fourth" name="potential" required="required">
+            <h3>dribbling</h3><br><input id="fourth" name="dribbling" required="required">
+            <h3>skill_long_passing</h3><br><input id="fourth" name="skill_long_passing" required="required">
+            <h3>power_shot_power</h3><br><input id="fourth" name="power_shot_power" required="required">
+            <h3>mentality_vision</h3><br><input id="fourth" name="mentality_vision" required="required">
+            
+           
+            <br><br><button id="sub" type="submit ">PREDICT RATING</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
